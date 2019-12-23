@@ -18,7 +18,7 @@ const getIndexFilePath = (dirPath: string, indexName?: string) => {
   return indexFileName ? path.join(dirPath, indexFileName) : undefined
 }
 
-export default (srcDirPath: string, indexName?: string) => {
+const wpfs = (srcDirPath: string, indexName?: string) => {
   const srcFolderNames = fs.readdirSync(srcDirPath).filter((itemName) => {
     const itemPath = path.join(srcDirPath, itemName)
     return fs.statSync(itemPath).isDirectory()
@@ -41,3 +41,6 @@ export default (srcDirPath: string, indexName?: string) => {
 
   return result
 }
+
+export default wpfs
+module.exports = wpfs
