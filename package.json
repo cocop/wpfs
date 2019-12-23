@@ -1,6 +1,6 @@
 {
   "name": "wpfs",
-  "description": "bundleing directory getter",
+  "description": "path getter for bundling directory",
   "version": "0.0.1",
   "author": "coco",
   "dependencies": {},
